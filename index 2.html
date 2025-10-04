@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Schedule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="machines">
+      <h2>Machines</h2>
+      <div class="machine" draggable="true">NID1</div>
+      <div class="machine" draggable="true">NID3</div>
+      <div class="machine" draggable="true">NID4</div>
+      <div class="machine" draggable="true">NID5</div>
+      <div class="machine" draggable="true">NID6</div>
+      <div class="machine" draggable="true">MAKAT7</div>
+      <div class="machine" draggable="true">MAKAT8</div>
+      <div class="machine" draggable="true">MAKAT9</div>
+    </div>
+
+    <div class="schedule">
+      <h2>Schedule</h2>
+      <div class="slots">
+        <div class="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+    </div>
+
+    <div class="employees">
+      <h2>Employees</h2>
+      <select>
+        <option>John</option>
+        <option>Maria</option>
+        <option>Alex</option>
+        <option>Kate</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
